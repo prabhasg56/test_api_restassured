@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="210750e7-df6a-4ce5-be7e-65e216445f60" name="Changes" comment="" />
+    <list default="true" id="210750e7-df6a-4ce5-be7e-65e216445f60" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BooksApiTesting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BooksApiTesting.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +20,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -24,6 +30,7 @@
     <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2DR2oYEHlDQtrMi3aU6OWA9dyNr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -35,7 +42,18 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.BooksApiTesting.testPostBooksDetails">
+  <component name="RunManager" selected="TestNG.BooksApiTesting.testPatchBooksDetails">
+    <configuration name="BooksApiTesting" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RestAssuredProject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BooksApiTesting" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BooksApiTesting.testDeleteBooks" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssuredProject" />
       <option name="PACKAGE_NAME" value="" />
@@ -48,35 +66,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BooksApiTesting.testGetBooksDetails" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="BooksApiTesting.testPatchBooksDetails" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssuredProject" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BooksApiTesting" />
-      <option name="METHOD_NAME" value="testGetBooksDetails" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BooksApiTesting.testPostBooksDetails (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="RestAssuredProject" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BooksApiTesting" />
-      <option name="METHOD_NAME" value="testPostBooksDetails" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BooksApiTesting.testPostBooksDetails (2)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="RestAssuredProject" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BooksApiTesting" />
-      <option name="METHOD_NAME" value="testPostBooksDetails" />
+      <option name="METHOD_NAME" value="testPatchBooksDetails" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -89,6 +83,18 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BooksApiTesting" />
       <option name="METHOD_NAME" value="testPostBooksDetails" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BooksApiTesting.testPutBooksDetails" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RestAssuredProject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BooksApiTesting" />
+      <option name="METHOD_NAME" value="testPutBooksDetails" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -119,19 +125,19 @@
     </configuration>
     <list>
       <item itemvalue="TestNG.Run as TestNG" />
+      <item itemvalue="TestNG.BooksApiTesting" />
+      <item itemvalue="TestNG.BooksApiTesting.testPatchBooksDetails" />
+      <item itemvalue="TestNG.BooksApiTesting.testPutBooksDetails" />
       <item itemvalue="TestNG.BooksApiTesting.testDeleteBooks" />
-      <item itemvalue="TestNG.BooksApiTesting.testGetBooksDetails" />
       <item itemvalue="TestNG.BooksApiTesting.testPostBooksDetails" />
-      <item itemvalue="TestNG.BooksApiTesting.testPostBooksDetails (1)" />
-      <item itemvalue="TestNG.BooksApiTesting.testPostBooksDetails (2)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.BooksApiTesting.testPostBooksDetails" />
-        <item itemvalue="TestNG.BooksApiTesting.testGetBooksDetails" />
+        <item itemvalue="TestNG.BooksApiTesting.testPatchBooksDetails" />
         <item itemvalue="TestNG.BooksApiTesting.testDeleteBooks" />
-        <item itemvalue="TestNG.BooksApiTesting.testPostBooksDetails (2)" />
-        <item itemvalue="TestNG.BooksApiTesting.testPostBooksDetails (1)" />
+        <item itemvalue="TestNG.BooksApiTesting.testPutBooksDetails" />
+        <item itemvalue="TestNG.BooksApiTesting" />
+        <item itemvalue="TestNG.BooksApiTesting.testPostBooksDetails" />
       </list>
     </recent_temporary>
   </component>
@@ -151,12 +157,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/BooksApiTesting.java</url>
-          <line>64</line>
+          <line>88</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/BooksApiTesting.java</url>
-          <line>35</line>
+          <line>33</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>

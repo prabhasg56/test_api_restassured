@@ -20,24 +20,50 @@ public class BooksApiTesting {
     public void testPostBooksDetails() {
         Map<String, Object> eachBooksDetails = new HashMap<>();
         List<Map> booksDetails = new ArrayList<>();
-        RestAssured.baseURI = "https://simple-books-api.glitch.me";
+        RestAssured.baseURI = "https://reqres.in";
         eachBooksDetails.put("Book Id", 1);
         eachBooksDetails.put("Book Name", "Java the Complete Reference");
         booksDetails.add(eachBooksDetails);
         eachBooksDetails.put("Book Id", 2);
         eachBooksDetails.put("Book Name", "Data Structures and Algorithms");
         booksDetails.add(eachBooksDetails);
-        //System.out.println(booksDetails);
-        JSONObject jsonObject = new JSONObject();
         RestAssured.given()
                 .header("content_Type", "Application/JSOn")
-                .body(eachBooksDetails)
+                .body(booksDetails)
                 .when()
-                .post("https://simple-books-api.glitch.me")
+                .post("https://reqres.in/api/users")
                 .then()
                 .statusCode(201);
-
-
+    }
+    @Test
+    public void testPutBooksDetails(){
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put("Name","Prabhas");
+        jsonObject.put("Job","Teacher");
+        //System.out.println(jsonObject);
+        given().
+                header("Content-Type","Application/JSON").
+                accept(ContentType.JSON).
+                body(jsonObject).
+        when().
+                put("https://reqres.in/api/users/2").
+        then().
+                assertThat().statusCode(200);
+    }
+    @Test
+    public void testPatchBooksDetails(){
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put("Name","Prabhas");
+        jsonObject.put("Job","Teacher");
+        //System.out.println(jsonObject);
+        given().
+                header("Content-Type","Application/JSON").
+                accept(ContentType.JSON).
+                body(jsonObject).
+                when().
+                patch("https://reqres.in/api/users/2").
+                then().
+                assertThat().statusCode(200);
     }
 
     @Test
@@ -57,10 +83,8 @@ public class BooksApiTesting {
     @Test
     public void testDeleteBooks() {
         when().
-                delete("https://simple-books-api.glitch.me").
+                delete("https://reqres.in/api/users/2").
                 then().
                 statusCode(204).log().all();
     }
-
-
 }
